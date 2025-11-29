@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMBC Parking Availability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-logo">
+            <img src="images/UMBC-primary-logo.png" alt="UMBC Logo" />
+            <h1>Parking Services</h1>
+        </div>
+    </header>
+
+    <div class="yellow-bar"></div>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <div class="left-section">
+            <section class="map-preview">
+                <h2>UMBC Campus Parking Map</h2>
+                <a href="docs/UMBC-Parking-Map-2024-2025.pdf" target="_blank" download="UMBC-Parking-Map-2024-2025.pdf">
+                    <img src="images/parking-map-thumbnail.png" alt="Parking Map Preview" class="map-thumbnail">
+                </a>
+                <p>Click on the map to view the full PDF.</p>
+            </section>
+
+            <section class="parking-selection">
+                <label for="parking-lot-select">Select Parking Lot:</label>
+                <select id="parking-lot-select">
+                    <option value="">-- Select a Parking Lot --</option>
+                    <option value="lot1">Lot 1</option>
+                    <option value="lot2">Lot 2</option>
+                    <option value="lot3">Lot 3</option>
+                    <option value="lot4">Lot 4</option>
+                    <option value="StadiumLot">Stadium Lot</option>
+                    <option value="lot26">Lot 26</option>
+                    <option value="lot27">Lot 27</option>
+                    <option value="lot28">Lot 28</option>
+                    <option value="lot29">Lot 29</option>
+                </select>
+            </section>
+        </div>
+
+        <div class="right-section">
+            <section>
+                <h2>Upload an Image</h2>
+                <div class="button-container">
+                    <label for="imageInput" class="custom-button">Choose File</label>
+                    <input type="file" id="imageInput" accept="image/*" />
+                    <button id="detectButton" class="custom-button">Detect Parking Spaces</button>
+                </div>
+            </section>
+
+            <section id="results" style="display: none;">
+                <h2>Results</h2>
+                <canvas id="imageCanvas" style="display: none;"></canvas>
+                <div id="predictions"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 UMBC Parking Services</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>

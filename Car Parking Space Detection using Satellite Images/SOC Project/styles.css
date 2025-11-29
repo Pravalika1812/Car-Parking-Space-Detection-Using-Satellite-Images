@@ -1,0 +1,226 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling if needed */
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 20px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header-logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Main Content Layout */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Left Section */
+.left-section {
+    width: 55%;
+}
+
+/* Right Section */
+.right-section {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parking-selection {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.parking-selection label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+#parking-lot-select {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+}
+
+.parking-info {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Map Preview Section */
+.map-preview {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.map-preview h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.map-thumbnail {
+    width: 80%; /* Adjust size as needed */
+    max-width: 600px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.map-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Results Section */
+#results {
+    display: none; /* Hide initially */
+    text-align: center; /* Center align the content */
+    margin-top: 30px; /* Add some spacing from the other sections */
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Canvas Styling */
+#imageCanvas {
+    display: block; /* Ensure it is visible when shown */
+    margin: 20px auto; /* Center the canvas */
+    border: 2px solid #007BFF; /* Blue border for visibility */
+    border-radius: 8px; /* Optional: Rounded corners */
+    max-width: 90%; /* Ensure it doesn't overflow */
+    max-height: 80vh; /* Limit height to fit within the viewport */
+    background-color: #ffffff; /* Add white background to avoid blending */
+}
+
+/* Predictions Text Styling */
+#predictions {
+    margin-top: 20px; /* Space between canvas and text */
+    font-size: 16px; /* Readable font size */
+    color: #333; /* Dark text color for contrast */
+    text-align: center; /* Center align the text */
+    line-height: 1.5; /* Add some spacing between lines */
+}
+
+/* General Button Styling */
+.custom-button {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#detectButton {
+    background-color: #007BFF; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#detectButton:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Upload Input Styling */
+#imageInput {
+    margin: 20px auto;
+    display: block;
+}
